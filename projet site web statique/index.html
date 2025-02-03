@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="EVENT organizer.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PROJECT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: relative;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            border: black solid;
+            border-radius: 20px;
+        }
+
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: flex;
+            float: left;
+            justify-content: center;
+            width: 20%;
+            text-align: right;
+            position: relative;
+        }
+
+        nav a:active {
+            color: #ff6347;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .home-page {
+            position: relative;
+            text-align: center;
+            color: white;
+            background: url('backgroundhomepage.png') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .home-page h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .home-page button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            color: white;
+            background: #ff6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .home-page button:hover {
+            background:#333;
+        }
+
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="EVENT organizer.jpg" width="100" height="100">
+        <h1>Mohamed Ali Events Organization</h1>
+        <h3>Where Vision Meets Excellence</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Theproject.html">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contacts.html">Contact</a></li>
+            <li><a href="identification.html">Identification</a></li>
+        </ul>
+    </nav>
+
+    <div class="home-page">
+        <h1>Welcome To Our Services</h1>
+        <button onclick="location.href='Aboutus.html'">Visit Us</button>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2025 My Website. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>

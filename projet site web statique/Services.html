@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="EVENT organizer.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PROJECT</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: relative;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            border: black solid;
+            border-radius: 20px;
+        }
+
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        .card-img-top {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: auto;
+        }
+
+        .btn-custom {
+            background-color: #333;
+            color: white;
+        }
+
+        .btn-custom:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="EVENT organizer.jpg" width="100" height="100">
+        <h1>Mohamed Ali Events Organization</h1>
+        <h3>Where Vision Meets Excellence</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Theproject.html">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contacts.html">Contact</a></li>
+            <li><a href="identification.html">Identification</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Our Event Services</h1>
+        <p class="text-center">We specialize in creating unforgettable events tailored to your needs. Whether you're celebrating a wedding, birthday, newborn, or graduation, we've got you covered!</p>
+        
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="wedding.jpg" class="card-img-top" alt="Wedding Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Weddings</h5>
+                        <a href="identification.html" class="btn btn-custom">Click here to order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="Birthday.avif" class="card-img-top" alt="Birthday Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthdays</h5>
+                        <a href="identification.html" class="btn btn-custom">Click here to order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="newborn.jpeg" class="card-img-top" alt="Newborn Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Newborn Celebrations</h5>
+                        <a href="identification.html" class="btn btn-custom">Click here to order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="celebration.jpg" class="card-img-top" alt="Graduation Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Graduations</h5>
+                        <a href="identification.html" class="btn btn-custom">Click here to order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="party.jpg" class="card-img-top" alt="Party Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Parties</h5>
+                        <a href="identification.html" class="btn btn-custom">Click here to order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="Conference & Seminar Organization.jpeg" class="card-img-top" alt="Party Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Conference & Seminar Organization</h5>
+                        <a href="identification.html" class="btn btn-custom">Click here to order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>Copyright &copy; 2025 My Website. All Rights Reserved.</p>
+        <p><a href="#" class="text-white">Privacy Policy</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

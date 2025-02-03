@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="EVENT organizer.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE PROJECT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            position: relative;
+            text-align: center;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            border: black solid;
+            border-radius: 20px;
+        }
+
+        nav {
+            background: #444;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: flex;
+            float: left;
+            justify-content: center;
+            width: 20%;
+            text-align: right;
+            position: relative;
+        }
+
+        nav a:active {
+            color: #ff6347;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #f4f4f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-header {
+            display: flex;
+            justify-content: space-around;
+            background: #ddd;
+            padding: 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-header div {
+            padding: 0.5rem 1rem;
+            text-align: center;
+            flex: 1;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .form-header .active {
+            background: #fff;
+            font-weight: bold;
+            transform: scale(1.1);
+        }
+
+        .form-content {
+            position: absolute;
+            width: 100%;
+            top: 50px;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .form-content.active {
+            opacity: 1;
+        }
+
+        .form-content.hidden {
+            opacity: 0;
+        }
+
+        .form-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-content label {
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        .form-content input {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-content button {
+            padding: 0.7rem;
+            background: #444;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .form-content button:hover {
+            background: #ff6347;
+        }
+
+        .form-wrapper {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        function toggleForm(formType) {
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const loginTab = document.getElementById('login-tab');
+            const signupTab = document.getElementById('signup-tab');
+
+            if (formType === 'login') {
+                signupForm.classList.add('hidden');
+                signupForm.classList.remove('active');
+                loginForm.classList.add('active');
+                loginForm.classList.remove('hidden');
+                loginTab.classList.add('active');
+                signupTab.classList.remove('active');
+            } else {
+                loginForm.classList.add('hidden');
+                loginForm.classList.remove('active');
+                signupForm.classList.add('active');
+                signupForm.classList.remove('hidden');
+                signupTab.classList.add('active');
+                loginTab.classList.remove('active');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="EVENT organizer.jpg" width="100" height="100">
+        <h1>Mohamed Ali Events Organization</h1>
+        <h3>Where Vision Meets Excellence</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="Theproject.html">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contacts.html">Contact</a></li>
+            <li><a href="identification.html">Identification</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+        <div class="form-header">
+            <div id="login-tab" class="active" onclick="toggleForm('login')">Login</div>
+            <div id="signup-tab" onclick="toggleForm('signup')">Sign Up</div>
+        </div>
+
+        <div class="form-wrapper">
+            <div id="login-form" class="form-content active">
+                <form>
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email">
+
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password">
+
+                    <button type="submit" class="submit">Login</button>
+                </form>
+            </div>
+
+            <div id="signup-form" class="form-content hidden">
+                <form>
+                    <label for="signup-name">Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your name">
+
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email">
+
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Enter your password">
+
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <input type="password" id="signup-confirm-password" placeholder="Confirm your password">
+
+                    <button type="submit" class="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2025 My Website. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+
+</html>
