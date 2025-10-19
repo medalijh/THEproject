@@ -1,0 +1,210 @@
+/* Styles personnalisés */
+:root {
+  --primary-green: #28a745;
+  --primary-orange: #fd7e14;
+  --text-green: #155724;
+  --light-green: #d4edda;
+  --light-orange: #fff3cd;
+  --light-yellow: #fff9c4;
+  --light-purple: #e2d9f3;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styles pour les boutons */
+.custom-btn,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger {
+  background-color: var(--primary-green) !important;
+  border-color: var(--primary-green) !important;
+  color: white !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover,
+.btn-primary:hover,
+.btn-success:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover {
+  background-color: #218838 !important;
+  border-color: #1e7e34 !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les champs de texte */
+.custom-input,
+.form-control,
+.form-select {
+  border: 2px solid var(--primary-orange) !important;
+  color: var(--text-green) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-input:focus,
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-orange) !important;
+  box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25) !important;
+  color: var(--text-green) !important;
+}
+
+/* Styles pour les cartes */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les catégories de recettes */
+.recipe-salades {
+  background-color: var(--light-green) !important;
+}
+
+.recipe-plats {
+  background-color: var(--light-orange) !important;
+}
+
+.recipe-jus {
+  background-color: var(--light-yellow) !important;
+}
+
+.recipe-desserts {
+  background-color: var(--light-purple) !important;
+}
+
+/* Styles pour les tableaux */
+.table {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table th {
+  background-color: var(--primary-green);
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.table td {
+  vertical-align: middle;
+  border-color: #dee2e6;
+}
+
+/* Styles pour les listes */
+.ingredients-list,
+.preparation-list {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.ingredients-list ul,
+.preparation-list ol {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.ingredients-list li,
+.preparation-list li {
+  margin-bottom: 5px;
+  color: var(--text-green);
+  font-weight: 500;
+}
+
+/* Styles pour la navigation */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.list-group-item-action:hover {
+  background-color: var(--light-green);
+  color: var(--text-green);
+}
+
+/* Styles pour les alertes */
+.alert {
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Styles pour les images */
+.recipe-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--primary-orange);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+}
+
+/* Styles pour les statistiques */
+.stat-card {
+  background: linear-gradient(135deg, var(--primary-green), #20c997);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
